@@ -71,6 +71,7 @@ public class featuretoggle implements ModInitializer {
 						return 1;
 					})));
 		}
+		command.requires(Commands.hasPermission(Commands.LEVEL_ADMINS));
 		return command;
 	}
 
