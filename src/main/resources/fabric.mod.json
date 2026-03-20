@@ -10,19 +10,12 @@
   "icon": "assets/featuretoggle/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "tulilon.client.featuretoggleClient"
-    ],
     "main": [
       "tulilon.featuretoggle"
     ]
   },
   "mixins": [
-    "featuretoggle.mixins.json",
-    {
-      "config": "featuretoggle.client.mixins.json",
-      "environment": "client"
-    }
+    "featuretoggle.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
