@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "tulilon.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "FeatureFlagRegistryAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

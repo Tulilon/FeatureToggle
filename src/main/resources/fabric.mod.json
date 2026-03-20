@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "featuretoggle",
+  "version": "${version}",
+  "name": "FeatureToggle",
+  "description": "allows you to toggle experiments on existing worlds/servers with a command",
+  "authors": ["Tulilon"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/featuretoggle/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "tulilon.client.featuretoggleClient"
+    ],
+    "main": [
+      "tulilon.featuretoggle"
+    ]
+  },
+  "mixins": [
+    "featuretoggle.mixins.json",
+    {
+      "config": "featuretoggle.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
